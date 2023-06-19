@@ -12,7 +12,7 @@
 <body>
 
     <?php
-    require("db_connection.php");
+    require("connect.php");
     $id = $_GET['id'];
 
     $sql = "SELECT * FROM song WHERE id = $id";
@@ -50,7 +50,7 @@
         $type = $_POST['type'];
         $songId = $_POST['songId'];
 
-        require("db_connection.php");
+        require("connect.php");
         $updatesql = "UPDATE song SET song_name = '$songName', artist_name = '$artistName', type = '$type' WHERE id = '$songId'";
 
         if (mysqli_query($conn, $updatesql)) {

@@ -14,7 +14,8 @@ h3 {
     font-family: 'Lilita One', cursive;
 }
 
-label, p {
+label,
+p {
     font-family: 'Diphylleia', serif;
     color: #7a5c58;
     font-weight: bold;
@@ -26,7 +27,7 @@ label, p {
 
 .size {
     width: 80%;
-    margin: 0px 100px;   
+    margin: 0px 100px;
 }
 
 td {

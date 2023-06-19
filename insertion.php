@@ -9,8 +9,6 @@ if (isset($_POST['addBtn'])) {
     $sql = "INSERT INTO song (song_name, artist_name, type) VALUES ('$songName', '$artistName', '$type')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "query success!";
-    } else {
-        echo "query fail..";
+        echo "<p class='text-success'>added a song successfully!</p>";
     }
 }

@@ -19,3 +19,19 @@ label, p {
     color: #7a5c58;
     font-weight: bold;
 }
+
+.box {
+    height: 45px;
+}
+
+.size {
+    width: 80%;
+    margin: 0px 100px;   
+}
+
+td {
+    font-family: 'Diphylleia', serif;
+    color: #7a5c58;
+    font-weight: bold;
+
+}

@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>K-popper</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-popper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="container bg-white border-start border-end border-5 border-danger">
+    <div class="container bg-white border-start border-end border-5 border-danger">
         <img src="image/gidle.jpg" width="100%" height="300px;">
 
         <h1 class="text-center border-danger fw-bold font-monospace">THE K-POP SONGS</h1>
@@ -55,7 +55,27 @@
                 </div>
 
             </form>
-            <?php require('insertion.php'); ?>
+            <div class="d-flex box">:<?php require('insertion.php'); ?></div>
+
+            <div class="mt-5">
+                <table border="2" class="table table-striped table-bordered border-danger size">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Song Name</th>
+                            <th>Artist Name</th>
+                            <th>Type</th>
+                            <th>Edit</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php require('read.php'); ?>
+                    </tbody>
+
+                </table>
+            </div>
+
+
 
 
         </div>
@@ -71,6 +91,7 @@
 
     </table>
     </div>
+
 
 
 </body>

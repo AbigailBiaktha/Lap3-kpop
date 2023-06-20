@@ -1,4 +1,4 @@
-This is for Lap3 web dev assgnment
+This is for Lap3 web dev assignment
 
 Team members
 

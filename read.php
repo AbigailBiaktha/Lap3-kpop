@@ -13,7 +13,7 @@ while ($row = mysqli_fetch_assoc($query)) {
             <td>$row[artist_name]</td>
             <td>$row[type]</td>
             <td>
-                <a href='update.php?id=$row[id]'>Update</a> |
+                <a href='update.php?id=$row[id]'>Edit</a> |
                 <a href='delete.php?id=$row[id]'>Delete</a>
             </td>
         </tr>
